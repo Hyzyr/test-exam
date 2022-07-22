@@ -49,6 +49,8 @@
     }
 
     &__section {
+        margin-inline: auto;
+        max-width: 2440px;
         position: relative;
 
         &::before {

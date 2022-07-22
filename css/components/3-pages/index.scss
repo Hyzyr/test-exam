@@ -1,5 +1,7 @@
 // intro 
 .intro {
+    margin-inline: auto;
+    max-width: 2440px;
     position: relative;
     background: $linear-from-bottom;
 
@@ -206,6 +208,8 @@
 
 // help
 .help {
+    margin-inline: auto;
+    max-width: 2440px;
     padding: 140px 0;
     background-color: $white;
 
