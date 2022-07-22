@@ -1,0 +1,216 @@
+// 1680px
+@include xxxxlg-xxxxxlg {
+    // index start
+    @include intro-xxxxlg-xxxxxlg;
+
+    // index end
+
+    h1 {
+        font-size: 58px;
+        line-height: 78px;
+    }
+
+    h2 {
+        font-size: 46px;
+        line-height: 60px;
+    }
+
+}
+
+// 1460px
+@include xxxlg-xxxxlg {
+    // layout start
+    @include header-xxxlg-xxxxlg;
+    @include nav-xxxlg-xxxxlg;
+    @include product-xxxlg-xxxxlg;
+    @include footer-xxxlg-xxxxlg;
+    // layout end
+
+    // index start
+    @include intro-xxxlg-xxxxlg;
+    @include help-xxxlg-xxxxlg;
+    // index end
+
+    h1 {
+        font-size: 52px;
+        line-height: 72px;
+    }
+
+    h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .auto__container {
+        padding: 0 30px;
+    }
+}
+
+// 1340px
+@include xxlg-xxxlg {
+    // layout start
+    @include nav-xxlg-xxxlg;
+    @include product-xxlg-xxxlg;
+    @include promo-xxlg-xxxlg;
+    @include features-xxlg-xxxlg;
+    // layout end
+
+    // index start
+    @include intro-xxlg-xxxlg;
+
+    // index end
+
+    h1 {
+        font-size: 42px;
+        line-height: 62px;
+    }
+
+    h2 {
+        font-size: 34px;
+        line-height: 44px;
+    }
+}
+
+// 1180px
+@include xlg-xxlg {
+    // layout start
+    @include product-xlg-xxlg;
+    @include promo-xlg-xxlg;
+    @include features-xlg-xxlg;
+    @include footer-xlg-xxlg;
+    // layout end
+
+    // index start
+
+    @include intro-xlg-xxlg;
+    // index end
+
+    h1 {
+        font-size: 38px;
+        line-height: 52px;
+    }
+
+    h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    p {
+        &.big {
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        &.md,
+        &.sm {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+}
+
+// 1024px
+@include lg-xlg {
+    // layout start
+    @include header-lg-xlg;
+    @include nav-lg-xlg;
+    @include product-lg-xlg;
+    @include promo-lg-xlg;
+    @include features-lg-xlg;
+    @include footer-lg-xlg;
+    // layout end
+
+    // index start
+    @include intro-lg-xlg;
+    @include help-lg-xlg;
+
+    // index end
+
+    h1 {
+        font-size: 34px;
+        line-height: 46px;
+    }
+}
+
+// 840px
+@include md-lg {
+    // layout start
+    @include promo-md-lg;
+    // layout end
+
+    // index start
+    @include intro-md-lg;
+    @include help-md-lg;
+    // index end
+}
+
+// 700px
+@include sm-md {
+    // layout start
+    @include header-sm-md;
+    @include nav-sm-md;
+    @include product-sm-md;
+    @include features-sm-md;
+    @include footer-sm-md;
+    // layout end
+
+    // index start
+    @include help-sm-md;
+    // index end
+
+    h5 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+// 540px
+@include xsm-sm {
+    // layout start
+    @include header-xsm-sm;
+    @include nav-xsm-sm;
+    @include product-xsm-sm;
+    @include promo-xsm-sm;
+    @include features-xsm-sm;
+    @include footer-xsm-sm;
+    // layout end
+
+    // index start
+    @include intro-xsm-sm;
+    @include help-xsm-sm;
+    // index end
+
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    p {
+        &.big {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &.sm {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}
+
+// 390px
+@include xxsm-xsm {
+    // index start
+    
+    // index end
+
+    h1 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+}

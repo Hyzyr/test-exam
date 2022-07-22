@@ -1,0 +1,114 @@
+/* Typography */
+h1 {
+  font-size: 64px;
+  line-height: 85px;
+}
+
+h2 {
+  font-size: 50px;
+  line-height: 65px;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 30px;
+  max-height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+p {
+  font-family: $yoxall;
+  font-weight: 400;
+  color: $green-1;
+
+  &.big {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  &.md {
+    color: $white;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  &.sm {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.auto__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.button {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: $main;
+  color: $white;
+  font-family: $yoxall;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 18px;
+  box-shadow: 0px 30px 40px -20px #5E7461;
+  cursor: pointer;
+  @include transition;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &.uniq {
+    padding: 24px 43px;
+    background-color: $green;
+  }
+
+  &.primary {
+    padding: 32px 40px;
+  }
+
+  &.input {
+    background-color: $main;
+    box-shadow: none;
+  }
+}
+
+.input {
+  box-sizing: border-box;
+  background-color: $white;
+
+  &.email {
+    padding-left: 50px;
+    padding-right: 40%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    font-family: $yoxall;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #8D988E;
+    box-shadow: 15px 25px 70px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    
+    &::placeholder {
+      font-family: $yoxall;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #8D988E;
+    }
+  }
+}
