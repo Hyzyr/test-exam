@@ -13,6 +13,21 @@
         @include transition;
 
         &-col {
+            p {
+                max-height: 175px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            &-title {
+                margin-bottom: 55px;
+                font-family: $yoxall;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 28px;
+                color: $dark-green;
+            }
+
             &:first-child {
                 width: calc(32% - 40px);
                 box-sizing: border-box;
@@ -23,32 +38,9 @@
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                outline: 1px solid #B9D2BC;
                 border-radius: 10px;
+                box-shadow: 10px 20px 60px rgba(0, 81, 11, 0.15);
                 cursor: pointer;
-                @include transition;
-
-                p {
-                    max-height: 175px;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-
-                &:hover {
-                    outline: none;
-                    box-shadow: 10px 20px 60px rgba(0, 81, 11, 0.15);
-                }
-
-                .features__inner-col {
-                    &-title {
-                        margin-bottom: 55px;
-                        font-family: $yoxall;
-                        font-weight: 700;
-                        font-size: 24px;
-                        line-height: 28px;
-                        color: $dark-green;
-                    }
-                }
             }
 
             &:last-child {
@@ -75,8 +67,6 @@
         height: 180px;
         outline: 1px solid #B9D2BC;
         border-radius: 10px;
-        cursor: pointer;
-        @include transition;
 
         &-title {
             font-family: $yoxall;
@@ -84,11 +74,6 @@
             font-size: 24px;
             line-height: 28px;
             color: $dark-green;
-        }
-
-        &:hover {
-            outline: none;
-            box-shadow: 10px 20px 60px rgba(0, 81, 11, 0.15);
         }
     }
 }
@@ -98,17 +83,15 @@
     .features {
         &__inner {
             &-col {
+                &-title {
+                    margin-bottom: 30px;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+
                 &:first-child {
                     width: calc(32% - 25px);
                     padding: 0 30px;
-
-                    .features__inner-col {
-                        &-title {
-                            margin-bottom: 30px;
-                            font-size: 20px;
-                            line-height: 24px;
-                        }
-                    }
                 }
 
                 &:last-child {
@@ -199,17 +182,15 @@
             justify-content: unset;
 
             &-col {
+                &-title {
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+
                 &:first-child {
                     width: 100%;
                     margin-bottom: 40px;
                     padding: 75px 45px;
-
-                    .features__inner-col {
-                        &-title {
-                            font-size: 20px;
-                            line-height: 28px;
-                        }
-                    }
                 }
 
                 &:last-child {
@@ -238,21 +219,19 @@
         padding-bottom: 60px;
 
         &__inner {
-
             &-col {
+
+                &-title {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+
+                p {
+                    max-height: 90px;
+                }
+
                 &:first-child {
                     padding: 54px 45px;
-
-                    p {
-                        max-height: 90px;
-                    }
-
-                    .features__inner-col {
-                        &-title {
-                            font-size: 16px;
-                            line-height: 28px;
-                        }
-                    }
                 }
             }
         }

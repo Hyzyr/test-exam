@@ -214,7 +214,7 @@
 
 // help
 .help {
-    padding: 140px 0;
+    padding: 90px 0;
     background-color: $white;
 
     &__inner {
@@ -230,7 +230,7 @@
         }
 
         &-blocks {
-            margin: -30px -35px;
+            margin: 0 -35px;
             display: flex;
             flex-wrap: wrap;
         }
@@ -264,7 +264,7 @@
 // 1460px
 @mixin help-xxxlg-xxxxlg {
     .help {
-        padding: 120px 0;
+        padding: 80px 0;
 
         &__inner {
             h2 {
@@ -272,7 +272,7 @@
             }
 
             &-blocks {
-                margin: -20px -25px;
+                margin: 0 -25px;
                 width: calc(65% - 30px);
             }
 
@@ -288,7 +288,7 @@
 // 1024px
 @mixin help-lg-xlg {
     .help {
-        padding: 100px 0;
+        padding: 70px 0;
 
         &__inner {
             h2 {
@@ -297,7 +297,7 @@
             }
 
             &-blocks {
-                margin: -15px;
+                margin: 0 -15px;
                 width: calc(70% - 15px);
             }
 
@@ -342,14 +342,14 @@
 // 700px
 @mixin help-sm-md {
     .help {
-        padding: 80px 0;
+        padding: 50px 0;
     }
 }
 
 // 540px
 @mixin help-xsm-sm {
     .help {
-        padding: 60px 0;
+        padding: 30px 0;
 
         &__inner {
             h2 {
@@ -357,7 +357,7 @@
             }
 
             &-blocks {
-                margin: -15px -8px;
+                margin: 0 -8px;
             }
 
             &-block {

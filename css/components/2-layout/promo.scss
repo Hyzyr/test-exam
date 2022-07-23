@@ -11,7 +11,6 @@
         align-items: center;
 
         &-content {
-            padding: 75px 0;
             width: 50%;
             display: flex;
             flex-direction: column;
@@ -32,12 +31,12 @@
 
         &-image {
             overflow: hidden;
-            width: calc(50% - 175px);
             border-radius: 15px;
+            width: calc(50% - 175px);
             filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.15));
 
             img {
-                max-width: 100%;
+                @include fullImage;
             }
         }
     }
@@ -47,10 +46,6 @@
 @mixin promo-xxlg-xxxlg {
     .promo {
         &__inner {
-            &-content {
-                padding: 60px 0;
-            }
-
             &-image {
                 width: calc(50% - 100px);
             }
@@ -62,10 +57,6 @@
 @mixin promo-xlg-xxlg {
     .promo {
         &__inner {
-            &-content {
-                padding: 30px 0;
-            }
-
             &-image {
                 width: calc(50% - 60px);
                 display: flex;
@@ -85,7 +76,6 @@
     .promo {
         &__inner {
             &-content {
-                padding: 0;
                 width: calc(50% - 15px);
 
                 h2 {
@@ -147,7 +137,7 @@
         &__inner {
             &-image {
                 border-radius: 10px;
-                
+
                 img {
                     min-width: 320px;
                 }
