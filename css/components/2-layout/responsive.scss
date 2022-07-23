@@ -6,8 +6,8 @@
     // index end
 
     h1 {
-        font-size: 58px;
-        line-height: 78px;
+        font-size: 54px;
+        line-height: 74px;
     }
 
     h2 {
@@ -30,11 +30,6 @@
     @include intro-xxxlg-xxxxlg;
     @include help-xxxlg-xxxxlg;
     // index end
-
-    h1 {
-        font-size: 52px;
-        line-height: 72px;
-    }
 
     h2 {
         font-size: 40px;
@@ -68,6 +63,19 @@
     h2 {
         font-size: 34px;
         line-height: 44px;
+    }
+
+    p {
+        &.big {
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        &.md,
+        &.sm {
+            font-size: 18px;
+            line-height: 22px;
+        }
     }
 }
 
@@ -127,8 +135,21 @@
     // index end
 
     h1 {
-        font-size: 34px;
-        line-height: 46px;
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    p {
+        &.big {
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        &.md,
+        &.sm {
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
 }
 
@@ -142,6 +163,11 @@
     @include intro-md-lg;
     @include help-md-lg;
     // index end
+
+    h1 {
+        font-size: 28px;
+        line-height: 38px;
+    }
 }
 
 // 700px
@@ -155,13 +181,9 @@
     // layout end
 
     // index start
+    @include intro-sm-md;
     @include help-sm-md;
     // index end
-
-    h5 {
-        font-size: 16px;
-        line-height: 20px;
-    }
 }
 
 // 540px
@@ -176,7 +198,7 @@
     // layout end
 
     // index start
-    @include intro-xsm-sm;
+    // @include intro-xsm-sm;
     @include help-xsm-sm;
     // index end
 
@@ -206,7 +228,7 @@
 // 390px
 @include xxsm-xsm {
     // index start
-    
+
     // index end
 
     h1 {

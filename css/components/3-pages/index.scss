@@ -1,9 +1,12 @@
 // intro 
 .intro {
-    margin-inline: auto;
-    max-width: 2440px;
-    position: relative;
     background: $linear-from-bottom;
+
+    .auto__container {
+        &.big {
+            position: relative;
+        }
+    }
 
     &__inner {
         display: flex;
@@ -122,7 +125,7 @@
     .intro {
         &__inner {
             &-image {
-                width: 405px;
+                width: 425px;
             }
 
             &-content {
@@ -145,56 +148,24 @@
 // 840px
 @mixin intro-md-lg {
     .intro {
-        .auto__container {
-            padding: 0 55px;
-        }
-
         &__inner {
-            flex-direction: column;
-            justify-content: unset;
-            align-items: unset;
-
             &-image {
-                position: unset;
-                width: 100%;
-                height: unset;
-
-                img {
-                    width: 70%;
-                    min-width: 430px;
-                }
+                width: 360px;
             }
 
             &-content {
                 padding-top: 60px;
                 padding-bottom: 55px;
-                width: 100%;
-            }
-        }
-    }
-}
 
-// 540px
-@mixin intro-xsm-sm {
-    .intro {
-        &__inner {
-            &-image {
-                margin: 0 -55px;
-                width: calc(100% + 110px);
-
-                img {
-                    width: 100%;
-                    min-width: unset;
-                }
-            }
-
-            &-content {
                 h1 {
                     margin-bottom: 20px;
                 }
 
                 p {
                     margin-bottom: 20px;
+                    max-height: 104px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
 
                 .button {
@@ -206,10 +177,43 @@
     }
 }
 
+
+// 700px
+@mixin intro-sm-md {
+    .intro {
+        .auto__container {
+            padding: 0 55px;
+        }
+
+        &__inner {
+            flex-direction: column;
+            justify-content: unset;
+            align-items: unset;
+
+            &-image {
+                position: unset;
+                margin: 0 -55px;
+                width: calc(100% + 110px);
+
+                img {
+                    width: 100%;
+                    min-width: unset;
+                }
+            }
+
+            &-content {
+                width: 100%;
+
+                p {
+                    max-height: unset;
+                }
+            }
+        }
+    }
+}
+
 // help
 .help {
-    margin-inline: auto;
-    max-width: 2440px;
     padding: 140px 0;
     background-color: $white;
 
@@ -251,7 +255,7 @@
             @include transition;
 
             &:hover {
-                opacity: .7;
+                color: $dark-green;
             }
         }
     }

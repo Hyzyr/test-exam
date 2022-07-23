@@ -40,7 +40,7 @@ function sliderOnCommand() {
     adaptiveHeight: true,
 
     responsive: [{
-        breakpoint: 960,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
